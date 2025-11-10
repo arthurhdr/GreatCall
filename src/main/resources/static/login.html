@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - GreatCall Video Conferencing</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+<header class="header">
+    <nav class="navbar">
+        <a href="/index.html" class="logo">Great<span>Call</span></a>
+    </nav>
+</header>
+
+<main class="main-content">
+    <div class="auth-container">
+        <div class="auth-header">
+            <h1>Welcome Back</h1>
+            <p>Sign in to your GreatCall account</p>
+        </div>
+
+        <div id="errorMessage" class="alert alert-error" style="display: none;">
+            <i class="fas fa-exclamation-circle"></i> Invalid email or password.
+        </div>
+
+        <div id="logoutMessage" class="alert alert-success" style="display: none;">
+            <i class="fas fa-check-circle"></i> You have been logged out successfully.
+        </div>
+
+        <form action="/login" method="post">
+            <div class="form-group">
+                <label for="username">Email Address</label>
+                <input type="email" id="username" name="username" class="form-control" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" class="form-control" placeholder="Enter your password" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+                <i class="fas fa-sign-in-alt"></i> Sign In
+            </button>
+        </form>
+
+        <div class="auth-link">
+            Don't have an account? <a href="/register.html">Create one here</a>
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>GreatCall</h3>
+            <p>Professional video conferencing solution for modern businesses.</p>
+        </div>
+        <div class="footer-section">
+            <h3>Contact</h3>
+            <p>Email: rosa.arthurh@gmail.com</p>
+            <p>Phone: +55 (47) 99179-6164</p>
+        </div>
+        <div class="footer-section">
+            <h3>Connect</h3>
+            <div class="social-links">
+                <a href="https://github.com/arthurhdr" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/arthurhugodarosa" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Arthur Hugo da Rosa. All rights reserved. | Designed for Professional Use</p>
+    </div>
+</footer>
+
+<script src="/js/login.js"></script>
+</body>
+</html>

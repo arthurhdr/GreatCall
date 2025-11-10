@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - GreatCall Video Conferencing</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+<header class="header">
+    <nav class="navbar">
+        <a href="/index.html" class="logo">Great<span>Call</span></a>
+        <div>
+            <button id="logoutBtn" class="btn btn-danger">
+                <i class="fas fa-sign-out-alt"></i> Logout
+            </button>
+        </div>
+    </nav>
+</header>
+
+<main class="main-content">
+    <div class="dashboard-container">
+        <div class="dashboard-header">
+            <h1>Video Conference Dashboard</h1>
+            <p>Connect with your team seamlessly</p>
+        </div>
+
+        <div class="dashboard-content">
+            <div class="conference-image">
+                <img src="https://www.tecinteractive.co.uk/wp-content/uploads/Studio-Small-Zoom-Rooms-Bundles-Studio-R30-TC10-Black-Lifestyle-1-Web-1-1920x1280.jpg" alt="Modern Video Conference Room">
+            </div>
+
+            <div class="meeting-controls">
+                <div class="control-section">
+                    <h3><i class="fas fa-video"></i> Start a Meeting</h3>
+                    <button id="newMeetingBtn" class="btn btn-primary btn-block">
+                        <i class="fas fa-plus-circle"></i> Create New Meeting
+                    </button>
+                </div>
+
+                <div class="control-section">
+                    <h3><i class="fas fa-users"></i> Join a Meeting</h3>
+                    <div class="control-group">
+                        <input type="text" placeholder="Enter Meeting ID" id="meetingName" class="form-control">
+                        <button id="joinMeetingBtn" class="btn btn-success">
+                            <i class="fas fa-sign-in-alt"></i> Join
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>GreatCall</h3>
+            <p>Professional video conferencing solution for modern businesses.</p>
+        </div>
+        <div class="footer-section">
+            <h3>Contact</h3>
+            <p>Email: rosa.arthurh@gmail.com</p>
+            <p>Phone: +55 (47) 99179-6164</p>
+        </div>
+        <div class="footer-section">
+            <h3>Connect</h3>
+            <div class="social-links">
+                <a href="https://github.com/arthurhdr" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/arthurhugodarosa" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; Arthur Hugo da Rosa. All rights reserved. | Designed for Professional Use</p>
+    </div>
+</footer>
+
+<script src="/js/index.js"></script>
+</body>
+</html>
